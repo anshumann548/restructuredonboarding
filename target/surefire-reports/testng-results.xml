@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-22T20:58:00 IST" name="Surefire suite" finished-at="2024-11-22T21:00:31 IST" duration-ms="151094">
+    <groups>
+    </groups>
+    <test started-at="2024-11-22T20:58:00 IST" name="Surefire test" finished-at="2024-11-22T21:00:31 IST" duration-ms="151094">
+      <class name="com.mycompany.omniapp_test">
+        <test-method signature="onboard_test()[pri:0, instance:com.mycompany.omniapp_test@7f9fcf7f]" started-at="2024-11-22T20:58:00 IST" name="onboard_test" finished-at="2024-11-22T21:00:31 IST" duration-ms="150949" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onboard_test -->
+        <test-method is-config="true" signature="driver_quit()[pri:0, instance:com.mycompany.omniapp_test@7f9fcf7f]" started-at="2024-11-22T21:00:31 IST" name="driver_quit" finished-at="2024-11-22T21:00:31 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driver_quit -->
+      </class> <!-- com.mycompany.omniapp_test -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

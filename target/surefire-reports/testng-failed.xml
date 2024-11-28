@@ -5,7 +5,7 @@
     <classes>
       <class name="com.mycompany.omniapp_test">
         <methods>
-          <include name="invalid_onborad_test"/>
+          <include name="onboard_test"/>
           <include name="driver_quit"/>
         </methods>
       </class> <!-- com.mycompany.omniapp_test -->

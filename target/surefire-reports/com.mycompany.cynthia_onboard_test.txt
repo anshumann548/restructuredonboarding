@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.mycompany.omniapp_test
+Test set: com.mycompany.cynthia_onboard_test
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.776 s - in com.mycompany.omniapp_test
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 21.554 s - in com.mycompany.cynthia_onboard_test

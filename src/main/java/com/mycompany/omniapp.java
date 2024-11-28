@@ -2,19 +2,18 @@ package com.mycompany;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;          // WebDriver interface
-import org.openqa.selenium.chrome.ChromeDriver; // ChromeDriver 
-import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;          // WebDriver interface
+import org.openqa.selenium.chrome.ChromeOptions; // ChromeDriver 
 
 public class omniapp {
 
     WebDriver driver;
 
-    public static void main(String[] args) throws InterruptedException {
-        omniapp maininstance = new omniapp();
-        maininstance.onboard("Ad12min@omniengage.co", "defaultPassword");
-    }
-
+    // public static void main(String[] args) throws InterruptedException {
+    //     omniapp maininstance = new omniapp();
+    //     maininstance.onboard("Ad12min@omniengage.co", "defaultPassword");
+    // } * to run this program individually without test class*
     public boolean onboard(String Username, String Password) throws InterruptedException {
         try {
 
@@ -30,8 +29,8 @@ public class omniapp {
             Thread.sleep(3000);
             String bannerText = driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/main/div/div/div[1]/div[1]")).getText();
             if (bannerText.contains("Cutting-Edge AI Workflow Builder")) {
-                return true; 
-            }else {
+                return true;
+            } else {
                 return false;
             }
         } catch (NoSuchElementException e) {

@@ -5,13 +5,21 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class omniapp_test {
-
+boolean result ;
     omniapp omniapper = new omniapp();
 
     @Test
     public void onboard_test() throws InterruptedException {
-        boolean result = omniapper.onboard("Ad12min@omniengage.co", "defaultPassword");
+         result = omniapper.onboard("Ad12min@omniengage.co", "defaultPassword");
         Assert.assertTrue(result);
+    }
+
+    @Test
+    public void invalid_onborad_test()throws InterruptedException
+    {
+      //correct username , incorrect password
+         result = omniapper.onboard("Ad12min@omniengage.co", "defcfgaultPassword");
+        Assert.assertFalse(result);
     }
 
     @AfterTest

@@ -28,11 +28,7 @@ public class omniapp {
             driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/div/div[2]/div/div[4]/button[1]")).click();
             Thread.sleep(3000);
             String bannerText = driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/main/div/div/div[1]/div[1]")).getText();
-            if (bannerText.contains("Cutting-Edge AI Workflow Builder")) {
-                return true;
-            } else {
-                return false;
-            }
+            return bannerText.contains("Cutting-Edge AI Workflow Builder");
         } catch (NoSuchElementException e) {
             return false;
         }

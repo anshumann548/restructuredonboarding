@@ -1,56 +1,75 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.mycompany</groupId>
-  <artifactId>MyAutomationProject</artifactId>
-  <packaging>jar</packaging>
-  <version>1.0-SNAPSHOT</version>
-  <name>MyAutomationProject</name>
-  <url>http://maven.apache.org</url>
+    <groupId>com.mycompany</groupId>
+    <artifactId>MyAutomationProject</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>MyAutomationProject</name>
+    <url>http://maven.apache.org</url>
 
-  <dependencies>
-    <!-- TestNG Dependency -->
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.8.0</version> <!-- You can use the latest version of TestNG -->
-      <scope>test</scope>
-    </dependency>
+    <dependencies>
+        <!-- TestNG Dependency -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.8.0</version> <!-- You can use the latest version of TestNG -->
+            <scope>test</scope>
+        </dependency>
 
-    <!-- Selenium Dependency -->
-    <dependency>
-      <groupId>org.seleniumhq.selenium</groupId>
-      <artifactId>selenium-java</artifactId>
-      <version>4.8.0</version>
-    </dependency>
-  </dependencies>
+        <!-- Selenium Dependency -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.8.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.5.0</version>
+            
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.hamcrest/hamcrest -->
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest</artifactId>
+            <version>2.2</version>
+  
+        </dependency>
 
-  <build>
-    <plugins>
-      <!-- Maven Surefire Plugin to Run Tests -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>3.0.0-M5</version> <!-- Ensure you have the latest version -->
-        <configuration>
-          <includes>
-            <include>**/*Test.java</include> <!-- Ensure all test classes are included -->
-          </includes>
-          <testFailureIgnore>false</testFailureIgnore> <!-- Fail the build on test failure -->
-        </configuration>
-      </plugin>
 
-      <!-- Optionally: If you want to run the main class (useful for non-test tasks) -->
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>exec-maven-plugin</artifactId>
-        <version>3.5.0</version>
-        <configuration>
-          <mainClass>com.mycompany.omniapp</mainClass> <!-- Run the main class if necessary -->
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
+    </dependencies>
+
+  
+
+
+    <build>
+        <plugins>
+            <!-- Maven Surefire Plugin to Run Tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.0.0-M5</version> <!-- Ensure you have the latest version -->
+                <configuration>
+                    <includes>
+                        <include>**/*Test.java</include> <!-- Ensure all test classes are included -->
+                    </includes>
+                    <testFailureIgnore>false</testFailureIgnore> <!-- Fail the build on test failure -->
+                </configuration>
+            </plugin>
+
+            <!-- Optionally: If you want to run the main class (useful for non-test tasks) -->
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.5.0</version>
+                <configuration>
+                    <mainClass>com.mycompany.omniapp</mainClass> <!-- Run the main class if necessary -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

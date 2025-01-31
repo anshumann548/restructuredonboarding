@@ -1,3 +1,4 @@
-/home/anshumann/Desktop/Remotewebdriver/MyAutomationProject/src/test/java/com/mycompany/cynthia_onboard_test.java
-/home/anshumann/Desktop/Remotewebdriver/MyAutomationProject/src/test/java/com/mycompany/getautoassured_test.java
-/home/anshumann/Desktop/Remotewebdriver/MyAutomationProject/src/test/java/com/mycompany/omniapp_test.java
+/home/anshumann/Desktop/Remotewebdriver/MyAutomationProject/src/test/java/com/mycompany/BaseTest.java
+/home/anshumann/Desktop/Remotewebdriver/MyAutomationProject/src/test/java/com/mycompany/cynthia_onboardTest.java
+/home/anshumann/Desktop/Remotewebdriver/MyAutomationProject/src/test/java/com/mycompany/getautoassuredTest.java
+/home/anshumann/Desktop/Remotewebdriver/MyAutomationProject/src/test/java/com/mycompany/omniappTest.java

@@ -1,17 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-19T20:39:29 IST" name="Surefire suite" finished-at="2024-12-19T20:39:31 IST" duration-ms="1330">
+  <suite started-at="2025-01-31T15:37:39 IST" name="Surefire suite" finished-at="2025-01-31T15:38:10 IST" duration-ms="31748">
     <groups>
     </groups>
-    <test started-at="2024-12-19T20:39:29 IST" name="Surefire test" finished-at="2024-12-19T20:39:31 IST" duration-ms="1330">
-      <class name="com.mycompany.getautoassured_test">
-        <test-method signature="testlogin_assure()[pri:0, instance:com.mycompany.getautoassured_test@7fe8ea47]" started-at="2024-12-19T20:39:29 IST" name="testlogin_assure" finished-at="2024-12-19T20:39:31 IST" duration-ms="1305" status="PASS">
+    <test started-at="2025-01-31T15:37:39 IST" name="Surefire test" finished-at="2025-01-31T15:38:10 IST" duration-ms="31748">
+      <class name="com.mycompany.omniappTest">
+        <test-method signature="test2_invalidLogin()[pri:2, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:37:50 IST" name="test2_invalidLogin" description="Verify login fails with invalid credentials" finished-at="2025-01-31T15:38:01 IST" duration-ms="11551" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testlogin_assure -->
-      </class> <!-- com.mycompany.getautoassured_test -->
+        </test-method> <!-- test2_invalidLogin -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:37:50 IST" name="setUp" finished-at="2025-01-31T15:37:50 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:38:01 IST" name="tearDown" finished-at="2025-01-31T15:38:02 IST" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="test1_validLogin()[pri:3, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:38:02 IST" name="test1_validLogin" description="Verify login with valid credentials" finished-at="2025-01-31T15:38:10 IST" duration-ms="8232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1_validLogin -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:38:02 IST" name="setUp" finished-at="2025-01-31T15:38:02 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:38:10 IST" name="tearDown" finished-at="2025-01-31T15:38:10 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mycompany.omniappTest -->
+      <class name="com.mycompany.getautoassuredTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.getautoassuredTest@4c6e276e]" started-at="2025-01-31T15:37:49 IST" name="setUp" finished-at="2025-01-31T15:37:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test4_autoAssuredLogin()[pri:1, instance:com.mycompany.getautoassuredTest@4c6e276e]" started-at="2025-01-31T15:37:49 IST" name="test4_autoAssuredLogin" description="Verify auto assured login functionality" finished-at="2025-01-31T15:37:50 IST" duration-ms="1155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4_autoAssuredLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.getautoassuredTest@4c6e276e]" started-at="2025-01-31T15:37:50 IST" name="tearDown" finished-at="2025-01-31T15:37:50 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mycompany.getautoassuredTest -->
+      <class name="com.mycompany.cynthia_onboardTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.cynthia_onboardTest@45f45fa1]" started-at="2025-01-31T15:37:39 IST" name="setUp" finished-at="2025-01-31T15:37:39 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test3_cynthiaOnboard()[pri:4, instance:com.mycompany.cynthia_onboardTest@45f45fa1]" started-at="2025-01-31T15:37:39 IST" name="test3_cynthiaOnboard" description="Verify Cynthia onboarding flow works correctly" finished-at="2025-01-31T15:37:48 IST" duration-ms="9783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3_cynthiaOnboard -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.cynthia_onboardTest@45f45fa1]" started-at="2025-01-31T15:37:48 IST" name="tearDown" finished-at="2025-01-31T15:37:49 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.mycompany.cynthia_onboardTest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

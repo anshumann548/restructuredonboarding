@@ -11,13 +11,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class cynthia {
-
-    public static void main(String[] args) throws InterruptedException {
-        cynthia maininstance = new cynthia();
-        maininstance.cynthia_onboard();
-
-    }
-
     WebDriver driver;
     omniapp omniapper = new omniapp();
 
@@ -35,9 +28,4 @@ public class cynthia {
             return false;
         }
     }
-
-    public void driver_control() {
-        driver.quit();
-    }
-
 }

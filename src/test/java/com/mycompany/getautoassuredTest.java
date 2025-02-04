@@ -8,6 +8,5 @@ public class getautoassuredTest extends BaseTest {
     public void test4_autoAssuredLogin() {
         getautoassured assure = new getautoassured();
         assure.login_assured();
-        // No driver assignment needed as this is an API test
     }
 }

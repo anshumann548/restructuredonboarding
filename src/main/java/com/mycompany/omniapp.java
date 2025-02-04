@@ -27,7 +27,7 @@ public class omniapp {
             driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/div/div[2]/div/div[2]/div/input")).sendKeys(Username);
             driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/div/div[2]/div/div[3]/div[1]/input")).sendKeys(Password);
             driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/div/div[2]/div/div[4]/button[1]")).click();
-            Thread.sleep(5000);
+            Thread.sleep(3000);
             
             String bannerText = driver.findElement(By.xpath("//*[@id='root']/div/div[2]/div/main/div/div/div[1]/div[1]")).getText();
             return bannerText.contains("Cutting-Edge AI Workflow Builder");

@@ -1,61 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-31T15:37:39 IST" name="Surefire suite" finished-at="2025-01-31T15:38:10 IST" duration-ms="31748">
+  <suite started-at="2025-02-03T21:40:27 IST" name="Surefire suite" finished-at="2025-02-03T21:41:25 IST" duration-ms="58490">
     <groups>
     </groups>
-    <test started-at="2025-01-31T15:37:39 IST" name="Surefire test" finished-at="2025-01-31T15:38:10 IST" duration-ms="31748">
+    <test started-at="2025-02-03T21:40:27 IST" name="Surefire test" finished-at="2025-02-03T21:41:25 IST" duration-ms="58490">
       <class name="com.mycompany.omniappTest">
-        <test-method signature="test2_invalidLogin()[pri:2, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:37:50 IST" name="test2_invalidLogin" description="Verify login fails with invalid credentials" finished-at="2025-01-31T15:38:01 IST" duration-ms="11551" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-02-03T21:41:06 IST" name="setUp" finished-at="2025-02-03T21:41:06 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="test2_invalidLogin()[pri:2, instance:com.mycompany.omniappTest@534df152]" started-at="2025-02-03T21:41:06 IST" name="test2_invalidLogin" description="Verify login fails with invalid credentials" finished-at="2025-02-03T21:41:16 IST" duration-ms="9278" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test2_invalidLogin -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:37:50 IST" name="setUp" finished-at="2025-01-31T15:37:50 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:38:01 IST" name="tearDown" finished-at="2025-01-31T15:38:02 IST" duration-ms="778" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-02-03T21:41:16 IST" name="tearDown" finished-at="2025-02-03T21:41:16 IST" duration-ms="761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="test1_validLogin()[pri:3, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:38:02 IST" name="test1_validLogin" description="Verify login with valid credentials" finished-at="2025-01-31T15:38:10 IST" duration-ms="8232" status="PASS">
+        <test-method signature="test1_validLogin()[pri:3, instance:com.mycompany.omniappTest@534df152]" started-at="2025-02-03T21:41:16 IST" name="test1_validLogin" description="Verify login with valid credentials" finished-at="2025-02-03T21:41:25 IST" duration-ms="8697" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.mycompany.omniappTest.test1_validLogin(omniappTest.java:18)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:136)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:145)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test1_validLogin -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:38:02 IST" name="setUp" finished-at="2025-01-31T15:38:02 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-02-03T21:41:16 IST" name="setUp" finished-at="2025-02-03T21:41:16 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-01-31T15:38:10 IST" name="tearDown" finished-at="2025-01-31T15:38:10 IST" duration-ms="102" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.omniappTest@534df152]" started-at="2025-02-03T21:41:25 IST" name="tearDown" finished-at="2025-02-03T21:41:25 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mycompany.omniappTest -->
       <class name="com.mycompany.getautoassuredTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.getautoassuredTest@4c6e276e]" started-at="2025-01-31T15:37:49 IST" name="setUp" finished-at="2025-01-31T15:37:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test4_autoAssuredLogin()[pri:1, instance:com.mycompany.getautoassuredTest@4c6e276e]" started-at="2025-01-31T15:37:49 IST" name="test4_autoAssuredLogin" description="Verify auto assured login functionality" finished-at="2025-01-31T15:37:50 IST" duration-ms="1155" status="PASS">
+        <test-method signature="test4_autoAssuredLogin()[pri:1, instance:com.mycompany.getautoassuredTest@4c6e276e]" started-at="2025-02-03T21:41:04 IST" name="test4_autoAssuredLogin" description="Verify auto assured login functionality" finished-at="2025-02-03T21:41:06 IST" duration-ms="2188" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test4_autoAssuredLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.getautoassuredTest@4c6e276e]" started-at="2025-01-31T15:37:50 IST" name="tearDown" finished-at="2025-01-31T15:37:50 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.getautoassuredTest@4c6e276e]" started-at="2025-02-03T21:41:04 IST" name="setUp" finished-at="2025-02-03T21:41:04 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.getautoassuredTest@4c6e276e]" started-at="2025-02-03T21:41:06 IST" name="tearDown" finished-at="2025-02-03T21:41:06 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.mycompany.getautoassuredTest -->
       <class name="com.mycompany.cynthia_onboardTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.cynthia_onboardTest@45f45fa1]" started-at="2025-01-31T15:37:39 IST" name="setUp" finished-at="2025-01-31T15:37:39 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.mycompany.cynthia_onboardTest@45f45fa1]" started-at="2025-02-03T21:40:27 IST" name="setUp" finished-at="2025-02-03T21:40:27 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test3_cynthiaOnboard()[pri:4, instance:com.mycompany.cynthia_onboardTest@45f45fa1]" started-at="2025-01-31T15:37:39 IST" name="test3_cynthiaOnboard" description="Verify Cynthia onboarding flow works correctly" finished-at="2025-01-31T15:37:48 IST" duration-ms="9783" status="PASS">
+        <test-method signature="test3_cynthiaOnboard()[pri:4, instance:com.mycompany.cynthia_onboardTest@45f45fa1]" started-at="2025-02-03T21:40:27 IST" name="test3_cynthiaOnboard" description="Verify Cynthia onboarding flow works correctly" finished-at="2025-02-03T21:41:04 IST" duration-ms="37407" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test3_cynthiaOnboard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.cynthia_onboardTest@45f45fa1]" started-at="2025-01-31T15:37:48 IST" name="tearDown" finished-at="2025-01-31T15:37:49 IST" duration-ms="105" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.mycompany.cynthia_onboardTest@45f45fa1]" started-at="2025-02-03T21:41:04 IST" name="tearDown" finished-at="2025-02-03T21:41:04 IST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

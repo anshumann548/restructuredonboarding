@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: TestSuite
--------------------------------------------------------------------------------
-Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 58.806 s <<< FAILURE! - in TestSuite
-com.mycompany.omniappTest.test1_validLogin  Time elapsed: 8.705 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at com.mycompany.omniappTest.test1_validLogin(omniappTest.java:18)
-

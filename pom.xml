@@ -8,7 +8,11 @@
     <version>1.0-SNAPSHOT</version>
     <name>MyAutomationProject</name>
     <url>http://maven.apache.org</url>
-
+    <properties>
+        <java.version>17</java.version> <!-- Set your desired Java version -->
+        <maven.compiler.source>1.7</maven.compiler.source>
+        <maven.compiler.target>1.7</maven.compiler.target>
+    </properties>
     <dependencies>
         <!-- TestNG Dependency -->
         <dependency>

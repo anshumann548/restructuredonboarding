@@ -13,7 +13,7 @@ public class BaseTest {
     @BeforeClass // Initialize WebDriver once
     public void setUp() {
         // Set ChromeDriver path
-        String chromeDriverPath = "/home/anshumann/Desktop/chromedriver/chromedriver";
+        String chromeDriverPath = "/usr/local/bin/chromedriver";
         System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 
         // Configure ChromeOptions for headless mode if needed

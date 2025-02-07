@@ -11,13 +11,17 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class cynthia {
-    WebDriver driver;
-    omniapp omniapper = new omniapp();
+    private WebDriver driver;
+    private omniapp omniapper;
+
+    public cynthia(WebDriver driver) {
+        this.driver = driver;
+        this.omniapper = new omniapp(driver); // Pass the driver instance to omniapp
+    }
 
     public boolean cynthia_onboard() throws InterruptedException {
         try {
             omniapper.onboard("Ad12min@omniengage.co", "defaultPassword");
-            this.driver = omniapper.driver;
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
             WebElement tryNowButton = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("tryNowBtn")));
 
